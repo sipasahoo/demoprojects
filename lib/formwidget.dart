@@ -5,11 +5,11 @@ import 'package:carousel_slider/carousel_options.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 final List<String> imgList = [
-  'images/CA8185H.jpg',
-  'images/image2.jpg',
-  'images/image3.jpg',
-  'images/image5.jpg',
-  'images/image-asset1.jpeg'
+  'images/CA8185H.jpg',//handwatch
+  'images/image2.jpg',//headphone
+  'images/image3.jpg',//mobile
+  'images/image5.jpg',//shoe
+  'images/image-asset1.jpeg'//mobile
 ];
 
 class Groupwidget {

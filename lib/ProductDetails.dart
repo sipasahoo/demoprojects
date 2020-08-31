@@ -1,3 +1,4 @@
+import 'package:demoprojects/cartpage.dart';
 import 'package:flutter/material.dart';
 
 class ProductDetailsPage extends StatefulWidget {
@@ -134,7 +135,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (context) =>
-                                          ProductDetailsPage()),
+                                          CartPage()),
                                 );
                               },
                               child: Text(
