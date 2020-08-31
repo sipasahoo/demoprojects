@@ -17,15 +17,10 @@ class _CartPageState extends State<CartPage> {
                   width: 1, color: Colors.grey, style: BorderStyle.solid)),
           child: Row(
             children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: MediaQuery.of(context).size.height / 5,
-                  width: MediaQuery.of(context).size.width / 4,
-                  child: Image.asset("images/CA8185H.jpg",
-                      height: MediaQuery.of(context).size.height,
-                      width: MediaQuery.of(context).size.width),
-                ),
+              Expanded(
+                child: Image.asset("images/CA8185H.jpg",
+                    height: MediaQuery.of(context).size.height,
+                    width: MediaQuery.of(context).size.width),
               ),
               Container(
                   height: MediaQuery.of(context).size.height / 5,
@@ -98,9 +93,15 @@ class _CartPageState extends State<CartPage> {
           SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                cardlist(),
-                cardlist(),
-                cardlist(),
+                Container(
+                  height: MediaQuery.of(context).size.height / 2,
+                  width: MediaQuery.of(context).size.width,
+                  child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (BuildContext context, index) {
+                        return cardlist();
+                      }),
+                ),
                 Container(
                     height: MediaQuery.of(context).size.height / 2.5,
                     width: MediaQuery.of(context).size.width,
